@@ -1,6 +1,6 @@
 $(document).ready(function()
 {	
-	var baseAddress = "http://127.0.0.1:5000";
+	var baseAddress = "http://127.0.0.1:6000";
 	$("#btn1").click(function(){
 		$.post(baseAddress + "/searchStudent",
 		{
@@ -65,26 +65,8 @@ $(document).ready(function()
 	});
 		
 	$("#btn5").click(function(){
-		$.post(baseAddress + "/searchByMark",
-		{
-			mark: ">7"
-		},
-		function(data, status){
-			console.log(data);
-			alert("Status: " + status);
-		},
-		"json");
+		document.getElementById("segno");
+		document.getElementById("numero");
 	});
 	
-	$("#btn6").click(function(){
-		$.post(baseAddress + "/searchByMark",
-		{
-			mark: "<7"
-		},
-		function(data, status){
-			console.log(data);
-			alert("Status: " + status);
-		},
-		"json");
-	});
 });

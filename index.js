@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());// JSON
 
 //set up the server
-app.set('port', (process.env.PORT || 6000));
+app.set('port', (process.env.PORT || 5000));
 //enable pre-flight authoriuzation
 app.options('*', cors());
 
